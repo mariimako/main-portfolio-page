@@ -39,17 +39,17 @@
           <br />
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#jsllearn"
-            >JSL-Learn</a
-          >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#RecallApp"
             >Recall App</a
           >
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#dandandan"
-            >DanDanDan</a
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#jsllearn"
+            >JSL-Learn</a
           >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#recog"
             >Recognition Brain</a
+          >
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#dandandan"
+            >DanDanDan</a
           >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
             >More</a
@@ -65,66 +65,22 @@
           <h2 class="section-title dark-blue-text">Projects</h2>
 
           <!-- Notice: each .row is a project -->
-          <div class="row" id = jsllearn>
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">JSL-Learn</h3>
-                <div>
-                  <p class="mb-4">
-                    An interactive website using Tensorflow.js, HTML, CSS and Javascript to learn and use the Japan Sign Language Alphabet. 
-                    This website was designed as a result of interested in learning sign language and helping others to learn the Japan sign language, as well as to implement a object detection model into a website using javascript
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://mariimako.github.io/Learn-JSL/"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/mariimako/Learn-JSL"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://mariimako.github.io/Learn-JSL/" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/jsl-learn.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-           <!-- Notice: each .row is a project -->
           <div class="row" id = RecallApp>
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Recall App</h3>
                 <div>
                   <p class="mb-4">
-                    A full-stack group project for nwHacks 2023. A mobile app created with React Native as front end aimed to assist dementia patients with associating names with 
-                    faces by creating an OpenCV image similarity program, an SQL database to store faces and names, and using flask to connect the back and front end. Working with three other members, I developed
-                    the OpenCV image similarity program.
+                    Recall-App is an easy to use mobile application made to enhance active recall among dementia patients. Users can register people based of their faces
+                    by taking a photo through the React Native application, and sending Base64 image data to the back-end to store in a SQLite database. Then, patients can scan 
+                    individuals faces to recall what their names were, which enhances active recall helping with memory loss.
+                    
+                    The API was created through Flask, and I personally deployed an OpenCV image similarity program that compares the uploaded image with registered images 
+                    in the database by first cropping the face in each image with Image Cascade, and comparing them with mean square error. If the mean square error is beneath a threshhold, 
+                    it outputs that registerd image's name. Although simple, this provides a streamlined and fast response to API calls in sending whole images. This project was presented to
+                    judges at the closing ceremony. 
+
+                    This was my first experience in back-end developement with Python and OpenCV, and explored my interest in computer vision.
                   </p>
                 </div>
                 <a
@@ -168,29 +124,32 @@
           <!-- /END Project -->
 
           <!-- Notice: each .row is a project -->
-          <div class="row" id = "dandandan">
+          <div class="row" id = jsllearn>
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">DandanDan</h3>
+                <h3 class="project-wrapper__text-title">JSL-Learn</h3>
                 <div>
                   <p class="mb-4">
-                    A Unity top-down RPG game, created with C# and the help of Michael Doyon. 
-                    This was an opportunity to explore my interest in game developement and learn developement fundamentals with systemic and OOP princicples.
+                    An interactive website using Tensorflow.js, HTML, CSS and Javascript to learn and use the Japan Sign Language Alphabet. The website utilizes Teachable Machine
+                    and ECMAScript 2022 to detect sign language characters in real-time by sending each frame of a webcam feed to the machine learning model I created with 
+                    Teachable Machine. The result is displayed as a percentage of the prevalence of each character in the feed in real-time. I also utilized async and await features in ECMAScript to properly handle promises to minimize load times in an already heavy application.
+
+                    This was my first web application I created from scratch and instilled fundamentals of HTML and CSS, along with Javascript DOM manipulation.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://mariimako.github.io/Learn-JSL/"
                 >
-                  See Live (In progress)
+                  See Live
                 </a>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="https://github.com/mariimako/Dandandan"
+                  href="https://github.com/mariimako/Learn-JSL"
                 >
                   Source Code
                 </a>
@@ -198,7 +157,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://mariimako.github.io/Learn-JSL/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -209,7 +168,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/dandandan.png"
+                      src="assets/jsl-learn.png"
                     />
                   </div>
                 </a>
@@ -218,14 +177,18 @@
           </div>
           <!-- /END Project -->
 
-          <!-- Notice: each .row is a project -->
-          <div class="row" id = "recog">
+      
+           <!-- Notice: each .row is a project -->
+           <div class="row" id = "recog">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
                 <h3 class="project-wrapper__text-title">Recognition Brain</h3>
                 <div>
                   <p class="mb-4">
-                    An in progress full stack React web application using RESTful API, node.js, jsx, SQL using a machine learning API for image recognition. 
+                    A full-stack web application making use of a Clarifai web API, React, Express and PostgreSQL 
+                    to detect explicit content within user uploaded image. The website has user authentication and user registration, which is done through appropiate 
+                    API call to: update the rank of the user, which is determined by the number of image uploads of the user (PUT), register the user (POST) and autheticate the user
+                    (GET). This project was a culmination of my knowledge in web developement, and I seek to further expand the website.
                   </p>
                 </div>
                 <a
@@ -267,6 +230,57 @@
             </div>
           </div>
           <!-- /END Project -->
+          <!-- Notice: each .row is a project -->
+          <div class="row" id = "dandandan">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">DandanDan</h3>
+                <div>
+                  <p class="mb-4">
+                    A Unity top-down RPG game, created with C# and the help of Michael Doyon. 
+                    This was an opportunity to explore my interest in game developement and learn developement fundamentals with OOP princicples and top-down models in software developement.
+                    I wish to further expand this game and incorporate more complex gameplay mechanics in the future.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live (In progress)
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/mariimako/Dandandan"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/dandandan.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
         </div>
       </div>
     </section>
@@ -275,7 +289,7 @@
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title"></h2>
+        <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <span class="d-flex mt-3" style = "justify-content: center;">
             <a
@@ -285,6 +299,13 @@
               href="assets/resume.pdf"
             >
               View Resume
+            </a>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="cta-btn cta-btn--resume"
+              href="assets/resume.pdf"
+            >
             </a>
           </span>
         </div>
