@@ -38,18 +38,32 @@
           <span class="text-color-main">Marius Shepherd</span>
           <br />
         </h1>
+        <h2 class = "hero-title hero-subtitle load-hidden">
+          <span class="text-color-main">Professional Experience</span>
+        </h2>
         <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#softwareeng"
+            >Software Engineering Intern</a>
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#cysec"
+          >Cybersecurity Intern</a>
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href=""
+            >Assistant Teaching</a>
+        </p>
+        <h2 class = "hero-title hero-subtitle load-hidden">
+          <span class="text-color-main">Personal Projects</span>
+        </h2>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#NidsWireshark"
+          >Custom NIDS</a
+          >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#RecallApp"
             >Recall App</a
           >
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#recog"
+          >Recognition Brain</a
+          >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#jsllearn"
             >JSL-Learn</a
-          >
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#recog"
-            >Recognition Brain</a
-          >
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#dandandan"
-            >DanDanDan</a
           >
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
             >More</a
@@ -58,12 +72,174 @@
       </div>
     </section>
 
+
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+            <h2 class="section-title secondary-color">Professional Experience</h2>
+    
+            <!-- Project 1: SmartHealth Ring App -->
+            <div class="row" id="softwareeng">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="project-wrapper__text load-hidden">
+                        <h3 class="project-wrapper__text-title">SmartHealth Ring App</h3>
+                        <p class="mb-4">
+                            During my second term at Cyberium, transitioning into a Software Engineer role, I worked on developing a fitness application as part of a startup product initiative. As one of the main developers, I was responsible for the full end-to-end development of a POC product, presented at multiple conferences in the US under YCombinator.<br><br>
+                            I leveraged Flutter for the cross-platform UI framework, integrating native Bluetooth Low Energy functionalities using Swift and Kotlin via platform channels. I organized this complex data by combining services like Firestore, OpenAI, Hive, and blockchain infrastructure while implementing a simple MVVM pattern to ensure maintainability and scalability.<br><br>
+                            A key challenge involved ensuring proper synchronization and multi-threading when integrating Bluetooth functionality with the smart ring for an optimal user experience. I gained a deep understanding of BLE's intricacies, including GATT and the differences in iOS and Android frameworks.<br><br>
+                            <em>Work samples are displayed on the right. Source code is private.</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="project-wrapper__image load-hidden">
+                      <div class="thumbnail rounded project-images">
+                          <img alt="Project Image 1" class="img-fluid small-image" src="assets/main.png" />
+                          <img alt="Project Image 2" class="img-fluid small-image" src="assets/sleep.png" />
+                          <img alt="Project Image 3" class="img-fluid small-image" src="assets/hr_cc.png" />
+                      </div>
+                  </div>
+              </div>
+              
+              <style>
+                  .project-images {
+                      display: flex;
+                      justify-content: space-between; /* Adds spacing between the images */
+                  }
+              
+                  .small-image {
+                      width: 30%; /* Adjust width to make images smaller */
+                      height: auto;
+                      margin-right: 10px; /* Optional: add some space between images */
+                  }
+              
+                  .thumbnail {
+                      transform: none; /* Disable tilt effect */
+                  }
+              </style>
+            </div>
+    
+            <!-- Project 2: Cybersecurity Requirement Rationalizer -->
+            <div class="row" id="cysec">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="project-wrapper__text load-hidden">
+                        <h3 class="project-wrapper__text-title">Cybersecurity Requirement Rationalizer</h3>
+                        <p class="mb-4">
+                            As a Cybersecurity Intern, I participated in consulting tasks such as network/port analysis and organizing ISO 27000 audit evidence. I also contributed to the development of an internal tool that helps consultants handle cybersecurity questionnaires by using an LLM to map requirements to compliance frameworks.<br><br>
+                            I enhanced the app's UI with React, improved accuracy using chain-of-thought techniques, and deployed the solution on Azure using Docker CI pipelines, firewalls, and Azure File Service for additional functionality.
+                        </p>
+                        <h3 class="project-wrapper__text-title">Cybersecurity Awareness Application</h3>
+                          <p class="mb-4">
+                              I collaborated on a project to develop a web platform for a cybersecurity awareness event that handled over 400 concurrent connections, 
+                              offering training on topics like coding practices, infrastructure security, and phishing. The platform featured real-time games using Socket.io and was hosted on Azure. 
+                              I contributed to back-end development and ensured scalability and performance through load testing and infrastructure monitoring.
+                          </p>
+                    </div>
+                </div>
+                                
+                <div class="col-lg-8 col-sm-12">
+                  <div class="project-wrapper__image load-hidden">
+                      <a rel="noreferrer" href="https://github.com/mariimako/Recall-App" target="_blank">
+                          <div class="thumbnail rounded project-images-large">
+                              <img alt="Project Image" class="img-fluid large-image" src="assets/rr_profile.png" />
+                          </div>
+                      </a>
+                  </div>
+              
+                  <div class="project-wrapper__image load-hidden">
+                      <a rel="noreferrer" href="https://github.com/mariimako/Recall-App" target="_blank">
+                          <div class="thumbnail rounded project-images-large">
+                              <img alt="Project Image" class="img-fluid large-image" src="assets/classication.png" />
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              
+              <style>
+                  .project-images-large {
+                      margin-bottom: 20px; /* Adds some spacing between the images */
+                  }
+              
+                  .large-image {
+                      width: 100%; /* Make the images larger */
+                      height: auto;
+                  }
+              
+                  .thumbnail {
+                      transform: none; /* Disable tilt effect */
+                  }
+              </style>               
+              </div>
+            </div>
+
+    
+            <!-- Project 3: Cybersecurity Awareness Application -->
+            
+        </div>
+    </div>
+    </section>
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title secondary-color">Personal Projects</h2>
 
+
+          <div class="row" id = NidsWireshark>
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Custom NIDS Desktop App</h3>
+                <div>
+                  <p class="mb-4">
+                    To explore and learn more about cybersecuirty, NIDS, and packet analysis, I created an NIDS from scratch
+                    with t-shark, usable as a desktop application. I wanted this to be a learning experience for myself, and the users,
+                    so I focused on creating a UI that easily explains NIDS concepts and functionalities to the user, and how packet analysis
+                    works. 
+                  </p>
+                    <p class="mb-4">
+                    This helped me do proper research on what a blue team member may do in these secuirty events and also learn
+                    more about how network intrusion happens from the lense of packet analysis. I am planning to expand the current application
+                    to work for not only WiFI network interface based packets but other network interfaces on MacOS!! 
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/mariimako/nids-wrshrk"
+                >
+                  Download
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/mariimako/nids-wrshrk"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/mariimako/Recall-App"target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/packets.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
           <!-- Notice: each .row is a project -->
           <div class="row" id = RecallApp>
             <div class="col-lg-4 col-sm-12">
@@ -122,61 +298,6 @@
             </div>
           </div>
           <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row" id = jsllearn>
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">JSL-Learn</h3>
-                <div>
-                  <p class="mb-4">
-                    An interactive website using Tensorflow.js, HTML, CSS and Javascript to learn and use the Japan Sign Language Alphabet. The website utilizes Teachable Machine
-                    and ECMAScript 2022 to detect sign language characters in real-time by sending each frame of a webcam feed to the machine learning model I created with 
-                    Teachable Machine. The result is displayed as a percentage of the prevalence of each character in the feed in real-time. I also utilized async and await features in ECMAScript to properly handle promises to minimize load times in an already heavy application.
-
-                    This was my first web application I created from scratch and instilled fundamentals of HTML and CSS, along with Javascript DOM manipulation.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://mariimako.github.io/Learn-JSL/"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/mariimako/Learn-JSL"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="https://mariimako.github.io/Learn-JSL/" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/jsl-learn.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
       
            <!-- Notice: each .row is a project -->
            <div class="row" id = "recog">
@@ -230,6 +351,61 @@
             </div>
           </div>
           <!-- /END Project -->
+
+                    <!-- Notice: each .row is a project -->
+                    <div class="row" id = jsllearn>
+                      <div class="col-lg-4 col-sm-12">
+                        <div class="project-wrapper__text load-hidden">
+                          <h3 class="project-wrapper__text-title">JSL-Learn</h3>
+                          <div>
+                            <p class="mb-4">
+                              An interactive website using Tensorflow.js, HTML, CSS and Javascript to learn and use the Japan Sign Language Alphabet. The website utilizes Teachable Machine
+                               to detect sign language characters in real-time by sending each frame of a webcam feed to the machine learning model I created with 
+                              Teachable Machine. The result is displayed as a percentage of the prevalence of each character in the feed in real-time. 
+                              I also utilized async and await features in ECMAScript to properly handle promises to minimize load times in an already heavy application.
+                              This was my first web application I created from scratch and instilled fundamentals of HTML and CSS, along with Javascript DOM manipulation.
+                            </p>
+                          </div>
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn cta-btn--hero"
+                            href="https://mariimako.github.io/Learn-JSL/"
+                          >
+                            See Live
+                          </a>
+                          <a
+                            rel="noreferrer"
+                            target="_blank"
+                            class="cta-btn text-color-main"
+                            href="https://github.com/mariimako/Learn-JSL"
+                          >
+                            Source Code
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-12">
+                        <div class="project-wrapper__image load-hidden">
+                          <a rel="noreferrer" href="https://mariimako.github.io/Learn-JSL/" target="_blank">
+                            <div
+                              data-tilt
+                              data-tilt-max="4"
+                              data-tilt-glare="true"
+                              data-tilt-max-glare="0.5"
+                              class="thumbnail rounded js-tilt"
+                            >
+                              <img
+                                alt="Project Image"
+                                class="img-fluid"
+                                src="assets/jsl-learn.png"
+                              />
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /END Project -->
+          
           <!-- Notice: each .row is a project -->
           <div class="row" id = "dandandan">
             <div class="col-lg-4 col-sm-12">
@@ -287,9 +463,8 @@
     <!-- /END Projects Section -->
 
     <!-- **** Contact Section **** -->
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
           <span class="d-flex mt-3" style = "justify-content: center;">
             <a
@@ -298,19 +473,15 @@
               class="cta-btn cta-btn--resume"
               href="assets/resume.pdf"
             >
-              View Resume
-            </a>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              class="cta-btn cta-btn--resume"
-              href="assets/resume.pdf"
-            >
+            <a href="{{ route('download.test', ['id' => $test->id] ,['target'=>'_blank']) }}" class="btn btn-primary">
+              Please click here to view</a>
+
+              Resume
             </a>
           </span>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- /END Contact Section -->
 
     <!-- **** Footer Section **** -->
